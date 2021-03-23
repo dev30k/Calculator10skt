@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Calculator1.0.skt</string>
+    <string name="subset_prompt">Choose a subset</string>
+    <string-array name="spinner_subsets">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+        <item>16</item>
+        <item>32</item>
+        <item>64</item>
+        <item>128</item>
+    </string-array>
+    <string-array name="spinner_binary">
+        <item>Binary</item>
+        <item>Decimal</item>
+        <item>HexaDecimal</item>
+    </string-array>
+    <string-array name="spinner_decimal">
+        <item>Binary</item>
+        <item>Decimal</item>
+        <item>HexaDecimal</item>
+    </string-array>
+
+
+</resources>

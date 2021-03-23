@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="home"
+        android:icon="@drawable/ic_ipv4"
+        android:id="@+id/bot_ipv4"
+        />
+    <item android:title="Item" />
+    <item android:title="ipv4"
+        android:icon="@drawable/ic_binary"
+        android:id="@+id/bot_binary"
+        />
+    <item android:title="Item" />
+    <item android:title="boolean"
+        android:icon="@drawable/ic_boolean"
+        android:id="@+id/bot_boolean"
+        />
+    <item android:title="Item" />
+</menu>

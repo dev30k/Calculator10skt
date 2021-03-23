@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#0d0768"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Binary Calculator"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtHeader"
+            android:background="@drawable/top_border"
+              >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10pt"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtHeaderCalculator"
+                    android:elevation="2dp"
+                    android:text="From"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:layout_marginLeft="10pt"
+                    android:textColor="#0d0768"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerBinary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_marginVertical="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/black"
+                    android:entries="@array/spinner_decimal"
+                    android:background="@drawable/border"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp"
+                    android:text="To  "
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:layout_marginLeft="10pt"
+                    android:textColor="#0d0768"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp" />
+                <Spinner
+                    android:id="@+id/spinnerDecimal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_marginVertical="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/black"
+                    android:entries="@array/spinner_binary"
+                    android:background="@drawable/border"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtHeaderY"
+                android:elevation="2dp"
+                android:text="Enter Number"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:layout_marginLeft="20pt"
+                android:textColor="#0d0768"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="left"
+                    android:background="@drawable/border"
+                    android:layout_marginHorizontal="29dp"
+                    android:layout_marginRight="20pt"
+                    android:inputType="phone"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="110dp"
+                    android:layout_marginVertical="20dp"
+                    android:background="@drawable/button"
+                    android:backgroundTint="#0d0768"
+                    android:text="Convert"
+                    android:textColor="@color/white"
+
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp"
+                    android:text="Binary Number"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:layout_marginLeft="20pt"
+                    android:textColor="#0d0768"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="left"
+                    android:background="@drawable/border"
+                    android:layout_marginHorizontal="29dp"
+                    android:layout_marginRight="20pt"
+                    android:inputType="phone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp"
+                    android:text="Decimal Number"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:layout_marginLeft="20pt"
+                    android:textColor="#0d0768"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="left"
+                    android:background="@drawable/border"
+                    android:layout_marginHorizontal="29dp"
+                    android:layout_marginRight="20pt"
+                    android:inputType="phone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp"
+                    android:text="HexaDecimal Number"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:layout_marginLeft="20pt"
+                    android:textColor="#0d0768"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="left"
+                    android:background="@drawable/border"
+                    android:layout_marginHorizontal="29dp"
+                    android:layout_marginRight="20pt"
+                    android:layout_marginBottom="50dp"
+                    android:inputType="phone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
